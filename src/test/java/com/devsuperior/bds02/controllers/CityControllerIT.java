@@ -28,8 +28,7 @@ public class CityControllerIT {
 		Long independentId = 5L;
 		
 		ResultActions result =
-				mockMvc.perform(delete("/cities/{id}", independentId));
-		
+				mockMvc.perform(delete("/cities/{id}", independentId));		
 		
 		result.andExpect(status().isNoContent());
 	}
